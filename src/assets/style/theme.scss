@@ -1,0 +1,33 @@
+$themes: (
+        red: (
+                master-color: red,
+        ),
+        green: (
+                master-color: green,
+        ),
+        blue: (
+                master-color: rgb(64,158,255,0.1),
+                hover-color: #409EFF,
+                disabled-color: #95dbf9,
+        ),
+);
+
+@mixin themify($themes: $themes) {
+  @each $theme-name, $map in $themes {
+
+    .theme-#{"" + $theme-name} & {
+      $theme-map: () !global;
+      @each $key, $value in $map {
+        $theme-map: map-merge($theme-map, ($key: $value)) !global;
+      }
+
+      @content;
+
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function themed($key) {
+  @return map-get($theme-map, $key);
+}

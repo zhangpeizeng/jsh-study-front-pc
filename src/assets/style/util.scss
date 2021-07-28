@@ -1,0 +1,841 @@
+@import "./theme.scss";
+
+// 鼠标移入文本，显示主题主色
+.text-hover:hover {
+  @include themify($themes) {
+    color: themed("master-color") !important;
+  }
+}
+.description-view {
+  overflow-y: scroll;
+  max-height: 300px;
+}
+.mt-preview {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+// 弹窗内容外侧样式
+.public-dialog {
+  .el-dialog__body {
+    padding: 0px 20px 30px 20px;
+  }
+}
+// 抽屉
+.public-drawer {
+  .el-drawer__header {
+    color: #303133;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .el-drawer__body {
+    overflow-y: auto;
+  }
+}
+.el-tooltip__popper {
+  max-width: 40% !important;
+}
+.icon-help {
+  width: 14px;
+  height: 14px;
+}
+
+// 鼠标移入显示小手图标
+.cursor-pointer {
+  cursor: pointer;
+}
+// 排序标志鼠标移动显示蓝色
+.el-icon-caret-top:hover {
+  color: #0486fe;
+}
+.el-icon-caret-bottom:hover {
+  color: #0486fe;
+}
+// 表格头部背景色统一改为灰色
+.el-table th.is-leaf {
+  background: #F5F7FA;
+}
+
+.outline-none{
+  outline: none;
+}
+
+// 透明背景
+.bg-transparent {
+  background-color: transparent !important;
+}
+
+// 白背景
+.bg-fff {
+  background-color: #fff !important;
+}
+
+// f2背景
+.bg-f2 {
+  background-color: #f2f2f2 !important;
+}
+
+// f9背景
+.bg-f9 {
+  background-color: #f9f9f9 !important;
+}
+
+// 裁剪背景
+.bg-cover {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-color-master {
+  @include themify($themes) {
+    background-color: themed("master-color") !important;
+  }
+}
+
+.color-master {
+  @include themify($themes) {
+    color: themed("master-color") !important;
+  }
+}
+
+.color-eee {
+  color: #eee !important;
+}
+
+.color-ddd {
+  color: #ddd !important;
+}
+
+.color-ccc {
+  color: #ccc !important;
+}
+
+.color-bbb {
+  color: #bbb !important;
+}
+
+.color-aaa {
+  color: #aaa !important;
+}
+
+.color-999 {
+  color: #999 !important;
+}
+
+.color-888 {
+  color: #888 !important;
+}
+
+.color-777 {
+  color: #777 !important;
+}
+
+.color-666 {
+  color: #666 !important;
+}
+
+.color-555 {
+  color: #555 !important;
+}
+
+.color-333 {
+  color: #333 !important;
+}
+
+.color-222 {
+  color: #222 !important;
+}
+
+.color-fff {
+  color: #fff !important;
+}
+
+.fs-12 {
+  font-size: 12px !important;
+}
+
+.fs-14 {
+  font-size: 14px !important;
+}
+
+.fs-16 {
+  font-size: 16px !important;
+}
+
+.fs-18 {
+  font-size: 18px !important;
+}
+
+.fs-20 {
+  font-size: 20px !important;
+}
+
+.fs-22 {
+  font-size: 22px !important;
+}
+
+.fs-24 {
+  font-size: 24px !important;
+}
+
+.fs-30 {
+  font-size: 30px !important;
+}
+
+.fw-bold {
+  font-weight: bold !important;
+}
+
+.fw-400 {
+  font-weight: 400 !important;
+}
+
+.fw-500 {
+  font-weight: 500 !important;
+}
+
+.fw-600 {
+  font-weight: 600 !important;
+}
+
+.fw-700 {
+  font-weight: 700 !important;
+}
+
+// 超出一行截断显示...
+.text-truncate {
+  text-overflow: ellipsis !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+}
+
+//超出两行截断显示...
+.text-truncate-2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+//超出三行截断显示...
+.text-truncate-3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+// 左浮动
+.float-left {
+  float: left !important;
+}
+
+// 右浮动
+.float-right {
+  float: right !important;
+}
+
+// 清除浮动
+.clearfix::after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+.w-10 {
+  width: 10% !important;
+}
+
+.w-15 {
+  width: 15% !important;
+}
+
+.w-20 {
+  width: 20% !important;
+}
+
+.w-25 {
+  width: 25% !important;
+}
+
+.w-30 {
+  width: 30% !important;
+}
+
+.w-35 {
+  width: 35% !important;
+}
+
+.w-40 {
+  width: 40% !important;
+}
+
+.w-45 {
+  width: 45% !important;
+}
+
+.w-50 {
+  width: 50% !important;
+}
+
+.w-55 {
+  width: 55% !important;
+}
+
+.w-60 {
+  width: 60% !important;
+}
+
+.w-65 {
+  width: 65% !important;
+}
+
+.w-70 {
+  width: 70% !important;
+}
+
+.w-75 {
+  width: 75% !important;
+}
+
+.w-80 {
+  width: 80% !important;
+}
+
+.w-85 {
+  width: 85% !important;
+}
+
+.w-90 {
+  width: 90% !important;
+}
+
+.w-95 {
+  width: 95% !important;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.h-50 {
+  height: 50% !important;
+}
+
+.h-100 {
+  height: 100% !important;
+}
+
+.h-20px{
+  height: 20px !important;
+}
+
+.vh-10 {
+  height: 10vh !important;
+}
+
+.vh-20 {
+  height: 20vh !important;
+}
+
+.vh-30 {
+  height: 30vh !important;
+}
+
+.vh-40 {
+  height: 40vh !important;
+}
+
+.vh-50 {
+  height: 50vh !important;
+}
+
+.vh-60 {
+  height: 60vh !important;
+}
+
+.vh-70 {
+  height: 70vh !important;
+}
+
+.vh-80 {
+  height: 80vh !important;
+}
+
+.vh-90 {
+  height: 90vh !important;
+}
+
+.vh-100 {
+  height: 100vh !important;
+}
+
+.vw-10 {
+  height: 10vw !important;
+}
+
+.vw-20 {
+  height: 20vw !important;
+}
+
+.vw-30 {
+  height: 30vw !important;
+}
+
+.vw-40 {
+  height: 40vw !important;
+}
+
+.vw-50 {
+  height: 50vw !important;
+}
+
+.vw-60 {
+  height: 60vw !important;
+}
+
+.vw-70 {
+  height: 70vw !important;
+}
+
+.vw-80 {
+  height: 80vw !important;
+}
+
+.vw-90 {
+  height: 90vw !important;
+}
+
+.vw-100 {
+  height: 100vw !important;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+// 启用flex布局
+.d-flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+// 主轴为水平方向，起点在左端
+.flex-row {
+  flex-direction: row !important;
+}
+
+// 主轴为水平方向，起点在右端
+.flex-row-reverse {
+  flex-direction: row-reverse !important;
+}
+
+// 主轴为垂直方向，起点在上沿
+.flex-column {
+  flex-direction: column !important;
+}
+
+// 主轴为垂直方向，起点在下沿
+.flex-column-reverse {
+  flex-direction: column-reverse !important;
+}
+
+// 左对齐
+.justify-content-start {
+  justify-content: flex-start !important;
+}
+
+// 右对齐
+.justify-content-end {
+  justify-content: flex-end !important;
+}
+
+// 居中
+.justify-content-center {
+  justify-content: center !important;
+}
+
+// 两端对齐，项目之间的间隔都相等
+.justify-content-between {
+  justify-content: space-between !important;
+}
+
+// 每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍
+.justify-content-around {
+  justify-content: space-around !important;
+}
+
+// 交叉轴的起点对齐
+.align-items-start {
+  align-items: flex-start !important;
+}
+
+// 交叉轴的终点对齐
+.align-items-end {
+  align-items: flex-end !important;
+}
+
+// 交叉轴的中点对齐
+.align-items-center {
+  align-items: center !important;
+}
+
+// 项目的第一行文字的基线对齐
+.align-items-baseline {
+  align-items: baseline !important;
+}
+
+// 如果项目未设置高度或设为auto，将占满整个容器的高度
+.align-items-stretch {
+  align-items: stretch !important;
+}
+
+// 重置行高为字体高
+.line-height-1 {
+  line-height: 1;
+}
+
+.line-height-1_1 {
+  line-height: 1.1;
+}
+
+.line-height-1_2 {
+  line-height: 1.2;
+}
+
+.line-height-1_3 {
+  line-height: 1.3;
+}
+
+.line-height-1_4 {
+  line-height: 1.4;
+}
+
+.line-height-1_5 {
+  line-height: 1.5;
+}
+
+// 间距class
+.m-0 {
+  margin: 0 !important;
+}
+
+.m-5 {
+  margin: 5px !important;
+}
+
+.m-10 {
+  margin: 10px !important;
+}
+
+.m-15 {
+  margin: 15px !important;
+}
+
+.m-20 {
+  margin: 20px !important;
+}
+
+.m-25 {
+  margin: 25px !important;
+}
+
+.m-30 {
+  margin: 30px !important;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.mt-5 {
+  margin-top: 5px !important;
+}
+
+.mt-10 {
+  margin-top: 10px !important;
+}
+
+.mt-15 {
+  margin-top: 15px !important;
+}
+
+.mt-20 {
+  margin-top: 20px !important;
+}
+
+.mt-25 {
+  margin-top: 25px !important;
+}
+
+.mt-30 {
+  margin-top: 30px !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.mb-5 {
+  margin-bottom: 5px !important;
+}
+
+.mb-10 {
+  margin-bottom: 10px !important;
+}
+
+.mb-15 {
+  margin-bottom: 15px !important;
+}
+
+.mb-20 {
+  margin-bottom: 20px !important;
+}
+
+.mb-25 {
+  margin-bottom: 25px !important;
+}
+
+.mb-30 {
+  margin-bottom: 30px !important;
+}
+
+.ml-0 {
+  margin-left: 0 !important;
+}
+
+.ml-5 {
+  margin-left: 5px !important;
+}
+
+.ml-10 {
+  margin-left: 10px !important;
+}
+
+.ml-15 {
+  margin-left: 15px !important;
+}
+
+.ml-20 {
+  margin-left: 20px !important;
+}
+
+.ml-25 {
+  margin-left: 25px !important;
+}
+
+.ml-30 {
+  margin-left: 30px !important;
+}
+.ml-95 {
+  margin-left: 95px !important;
+}
+
+.mr-0 {
+  margin-right: 0 !important;
+}
+
+.mr-5 {
+  margin-right: 5px !important;
+}
+
+.mr-10 {
+  margin-right: 10px !important;
+}
+
+.mr-15 {
+  margin-right: 15px !important;
+}
+
+.mr-20 {
+  margin-right: 20px !important;
+}
+
+.mr-25 {
+  margin-right: 25px !important;
+}
+
+.mr-30 {
+  margin-right: 30px !important;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
+.p-5 {
+  padding: 5px !important;
+}
+
+.p-10 {
+  padding: 10px !important;
+}
+
+.p-15 {
+  padding: 15px !important;
+}
+
+.p-20 {
+  padding: 20px !important;
+}
+
+.p-25 {
+  padding: 25px !important;
+}
+
+.p-30 {
+  padding: 30px !important;
+}
+
+.pt-0 {
+  padding-top: 0 !important;
+}
+
+.pt-5 {
+  padding-top: 5px !important;
+}
+
+.pt-10 {
+  padding-top: 10px !important;
+}
+
+.pt-15 {
+  padding-top: 15px !important;
+}
+
+.pt-20 {
+  padding-top: 20px !important;
+}
+
+.pt-25 {
+  padding-top: 25px !important;
+}
+
+.pt-30 {
+  padding-top: 30px !important;
+}
+
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+
+.pb-5 {
+  padding-bottom: 5px !important;
+}
+
+.pb-10 {
+  padding-bottom: 10px !important;
+}
+
+.pb-15 {
+  padding-bottom: 15px !important;
+}
+
+.pb-20 {
+  padding-bottom: 20px !important;
+}
+
+.pb-25 {
+  padding-bottom: 25px !important;
+}
+
+.pb-30 {
+  padding-bottom: 30px !important;
+}
+
+.pl-0 {
+  padding-left: 0 !important;
+}
+
+.pl-5 {
+  padding-left: 5px !important;
+}
+
+.pl-10 {
+  padding-left: 10px !important;
+}
+
+.pl-15 {
+  padding-left: 15px !important;
+}
+
+.pl-20 {
+  padding-left: 20px !important;
+}
+
+.pl-25 {
+  padding-left: 25px !important;
+}
+
+.pl-30 {
+  padding-left: 30px !important;
+}
+
+.pr-0 {
+  padding-right: 0 !important;
+}
+
+.pr-5 {
+  padding-right: 5px !important;
+}
+
+.pr-10 {
+  padding-right: 10px !important;
+}
+
+.pr-15 {
+  padding-right: 15px !important;
+}
+
+.pr-20 {
+  padding-right: 20px !important;
+}
+
+.pr-25 {
+  padding-right: 25px !important;
+}
+
+.pr-30 {
+  padding-right: 30px !important;
+}
+// 页面底部公共样式
+.footer-bottom-container {
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  bottom: 0px;
+  margin-top: 30px;
+  position: fixed;
+  z-index: 999;
+  background-color: #e8f4ff;
+  left: 160px;
+  width: calc(100% - 180px);
+}
