@@ -23,7 +23,7 @@
             filterable
             collapse-tags
             size="mini"
-            placeholder="请选择111111112222222222333"
+            placeholder="请选择1111111122222222223334444444"
             style="width: 240px;"
             @change="centerChange"
           >
